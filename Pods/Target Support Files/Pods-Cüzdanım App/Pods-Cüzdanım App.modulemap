@@ -1,0 +1,6 @@
+framework module Pods_Cu_zdan_m_App {
+  umbrella header "Pods-Cüzdanım App-umbrella.h"
+
+  export *
+  module * { export * }
+}

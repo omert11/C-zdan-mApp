@@ -12,9 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        navigationItem.backBarButtonItem?.title="dsad"
     }
-
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       let navigationback=UIBarButtonItem()
+        navigationback.title="Geri"
+        navigationItem.backBarButtonItem=navigationback
+        
+    }
+    @IBAction func eklebtn(_ sender: Any) {
+        performSegue(withIdentifier: "ekleekrani", sender: nil)
+    }
+    
 }
 
